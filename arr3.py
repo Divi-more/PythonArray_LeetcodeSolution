@@ -24,3 +24,15 @@ class Solution(object):
             
         res.sort()
         return res
+    
+"""
+arr = [5,3,7,1,-8]
+
+res = []
+
+for num in arr:
+    res.append(num ** 2)
+    
+res.sort()
+print(res)
+"""
