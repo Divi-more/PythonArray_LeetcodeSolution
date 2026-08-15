@@ -14,14 +14,12 @@ class Solution(object):
         :rtype: None Do not return anything, modify nums in-place instead.
         """
         
-        arr1 = []
-        arr2 = []
-        
-        for i in nums:
-            if i != 0:
-                arr1.append(i)
-            else:
-                arr2. append(i)
-        
-        res = arr1 + arr2
-        print(res)    
+        k = 0
+
+        for i in range(len(nums)):
+            if nums[i] != 0:
+                nums[k] = nums[i]
+                k += 1
+
+        for i in range(k, len(nums)):
+            nums[i] = 0    
